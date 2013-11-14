@@ -104,7 +104,7 @@
 -(UIView*)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
     
     UILabel* lbl = [[UILabel alloc]init];
-    [lbl setFont:[UIFont fontWithName:@"Futura" size:12]];
+    [lbl setFont:[UIFont fontWithName:@"Apple SD Gothic Neo" size:12]];
     [lbl setText:[self pickerView:pickerView titleForRow:row forComponent:component]];
     [lbl setTextAlignment:NSTextAlignmentCenter];
     

@@ -51,7 +51,9 @@
     [listaDeCompras addObject:[[self txtProduto3] text]];
     
     //adngoidho'gadioh'fahioádi'fai'jsdfiaidsftiucku
-    //ugiuo
+    //ugiuohtd
+    //rhh
+    //hrwh
     
     [self lblResposta].numberOfLines = 1000;
     

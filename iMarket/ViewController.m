@@ -19,13 +19,20 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self setLista:[[NSMutableArray alloc]init]];
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+//    UIPickerView* novo = [[UIPickerView alloc]initWithFrame:[[self pickerProdutos] bounds]];
+//    [novo addSubview:[self lblResposta]];
+//    [[self pickerProdutos] removeFromSuperview];
+//    [novo setDelegate:self];
+//    [self.view addSubview:novo];
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -38,41 +45,70 @@
 
 - (IBAction)btnConsultar_OnClick:(id)sender {
     
-    [[self txtProduto1] resignFirstResponder];
-    [[self txtProduto2] resignFirstResponder];
-    [[self txtProduto3] resignFirstResponder];
+    [[self txtProduto] resignFirstResponder];
     
     
     Gogogo* programa = [[Gogogo alloc]init:10 X:1 Y:2];
     
-    NSMutableArray* listaDeCompras = [[NSMutableArray alloc]init];
-    [listaDeCompras addObject:[[self txtProduto1] text]];
-    [listaDeCompras addObject:[[self txtProduto2] text]];
-    [listaDeCompras addObject:[[self txtProduto3] text]];
-    
-    //adngoidho'gadioh'fahioádi'fai'jsdfiaidsftiucku
-    //ugiuohtd
-    //rhh
-    //hrwh
-    //teste
-    //teste2
-    
-    [self lblResposta].numberOfLines = 1000;
+    [self lblResposta].numberOfLines = 10000;
     
     NSString* resposta = [[NSString alloc]init];
-    resposta = [programa comparar:listaDeCompras];
+    resposta = [programa comparar:[self lista]];
     
     [[self lblResposta] setText:resposta];
     
-    [[self scrvwResposta] setContentSize:CGSizeMake(300, 500)];
+    [[self scrvwResposta] setContentSize:CGSizeMake(300, 300)];
     
     NSLog(@"%@", resposta);
 }
 - (IBAction)txtProduto3_OnEndExit:(id)sender {
     
-    [[self txtProduto1] resignFirstResponder];
-    [[self txtProduto2] resignFirstResponder];
-    [[self txtProduto3] resignFirstResponder];
+    [[self txtProduto] resignFirstResponder];
     
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (IBAction)btnAdd_OncClick:(id)sender {
+    [[self lista]addObject:[[self txtProduto] text]];
+    [[self pickerProdutos] reloadAllComponents];
+}
+
+- (IBAction)btnremove_OnClick:(id)sender {
+    if([[self pickerProdutos] selectedRowInComponent:0] != 0){
+        [[self lista] removeObjectAtIndex:([[self pickerProdutos] selectedRowInComponent:0] - 1)];
+        [[self pickerProdutos] reloadAllComponents];
+    }
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [[self lista]count] + 1;
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+-(NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    if(row != 0){
+        return [[self lista]objectAtIndex:(row - 1)];
+    }
+    else{
+        return @"Selecione o  Produto para removelo";
+    }
+}
+
+-(UIView*)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    
+    UILabel* lbl = [[UILabel alloc]init];
+    [lbl setFont:[UIFont fontWithName:@"Futura" size:12]];
+    [lbl setText:[self pickerView:pickerView titleForRow:row forComponent:component]];
+    [lbl setTextAlignment:NSTextAlignmentCenter];
+    
+    return lbl;
+}
+
 @end

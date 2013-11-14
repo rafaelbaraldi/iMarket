@@ -50,6 +50,9 @@
     [listaDeCompras addObject:[[self txtProduto2] text]];
     [listaDeCompras addObject:[[self txtProduto3] text]];
     
+    //adngoidho'gadioh'fahioádi'fai'jsdfiaidsftiucku
+    //ugiuo
+    
     [self lblResposta].numberOfLines = 1000;
     
     NSString* resposta = [[NSString alloc]init];

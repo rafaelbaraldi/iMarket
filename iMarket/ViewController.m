@@ -54,6 +54,8 @@
     //ugiuohtd
     //rhh
     //hrwh
+    //teste
+    //teste2
     
     [self lblResposta].numberOfLines = 1000;
     

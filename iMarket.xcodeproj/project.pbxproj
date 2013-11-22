@@ -25,6 +25,10 @@
 		1B4DE7BE182D47B200E7D3E6 /* Mercado.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DE7B8182D47B200E7D3E6 /* Mercado.m */; };
 		1B4DE7BF182D47B200E7D3E6 /* Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DE7BA182D47B200E7D3E6 /* Mock.m */; };
 		1B4DE7C0182D47B200E7D3E6 /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DE7BC182D47B200E7D3E6 /* Produto.m */; };
+		1B662F1D183FBD3D00D41474 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B662F1B183FBD3D00D41474 /* HomeViewController.m */; };
+		1B662F1E183FBD3D00D41474 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F1C183FBD3D00D41474 /* HomeViewController.xib */; };
+		1B662F28183FC2C300D41474 /* carrinho.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F27183FC2C300D41474 /* carrinho.png */; };
+		1B662F2A183FC32900D41474 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F29183FC32900D41474 /* home.png */; };
 		A8CE4C9618355F4400C5E5D2 /* market33.png in Resources */ = {isa = PBXBuildFile; fileRef = A8CE4C9518355F4400C5E5D2 /* market33.png */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,11 @@
 		1B4DE7BA182D47B200E7D3E6 /* Mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mock.m; sourceTree = "<group>"; };
 		1B4DE7BB182D47B200E7D3E6 /* Produto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Produto.h; sourceTree = "<group>"; };
 		1B4DE7BC182D47B200E7D3E6 /* Produto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Produto.m; sourceTree = "<group>"; };
+		1B662F1A183FBD3D00D41474 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1B662F1B183FBD3D00D41474 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1B662F1C183FBD3D00D41474 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1B662F27183FC2C300D41474 /* carrinho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrinho.png; sourceTree = "<group>"; };
+		1B662F29183FC32900D41474 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		A8CE4C9518355F4400C5E5D2 /* market33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market33.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +105,8 @@
 		1B4065C61835571F00B887D7 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				1B662F29183FC32900D41474 /* home.png */,
+				1B662F27183FC2C300D41474 /* carrinho.png */,
 				A8CE4C9518355F4400C5E5D2 /* market33.png */,
 			);
 			name = Imagens;
@@ -143,6 +154,9 @@
 				1B4DE7AF182D473900E7D3E6 /* ViewController.h */,
 				1B4DE7B0182D473900E7D3E6 /* ViewController.m */,
 				1B4DE7B1182D473900E7D3E6 /* ViewController.xib */,
+				1B662F1A183FBD3D00D41474 /* HomeViewController.h */,
+				1B662F1B183FBD3D00D41474 /* HomeViewController.m */,
+				1B662F1C183FBD3D00D41474 /* HomeViewController.xib */,
 			);
 			path = iMarket;
 			sourceTree = "<group>";
@@ -266,8 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B662F28183FC2C300D41474 /* carrinho.png in Resources */,
 				1B4DE78B182D471800E7D3E6 /* InfoPlist.strings in Resources */,
+				1B662F2A183FC32900D41474 /* home.png in Resources */,
 				A8CE4C9618355F4400C5E5D2 /* market33.png in Resources */,
+				1B662F1E183FBD3D00D41474 /* HomeViewController.xib in Resources */,
 				1B4DE7B3182D473900E7D3E6 /* ViewController.xib in Resources */,
 				1B4DE793182D471800E7D3E6 /* Images.xcassets in Resources */,
 			);
@@ -295,6 +312,7 @@
 				1B4DE7BF182D47B200E7D3E6 /* Mock.m in Sources */,
 				1B4DE791182D471800E7D3E6 /* AppDelegate.m in Sources */,
 				1B4DE78D182D471800E7D3E6 /* main.m in Sources */,
+				1B662F1D183FBD3D00D41474 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

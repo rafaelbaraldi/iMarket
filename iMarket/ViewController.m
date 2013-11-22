@@ -20,6 +20,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self setLista:[[NSMutableArray alloc]init]];
+        UITabBarItem* item = [self tabBarItem];
+        [item setTitle:@"Search"];
+        [item setImage:[UIImage imageNamed:@"carrinho"]];
     }
     return self;
 }

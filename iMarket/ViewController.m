@@ -60,7 +60,7 @@
     
     [[self lblResposta] setText:resposta];
     
-    [[self scrvwResposta] setContentSize:CGSizeMake(300, 300)];
+    [[self scrvwResposta] setContentSize:CGSizeMake(400, 400)];
     
     NSLog(@"%@", resposta);
 }
@@ -100,7 +100,7 @@
         return [[self lista]objectAtIndex:(row - 1)];
     }
     else{
-        return @"Selecione o  Produto para removelo";
+        return @"Selecione o produto para removê-lo";
     }
 }
 

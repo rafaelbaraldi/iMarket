@@ -10,4 +10,5 @@
 
 @interface HomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgLogo;
 @end

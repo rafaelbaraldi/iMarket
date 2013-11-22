@@ -29,6 +29,9 @@
 		1B662F1E183FBD3D00D41474 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F1C183FBD3D00D41474 /* HomeViewController.xib */; };
 		1B662F28183FC2C300D41474 /* carrinho.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F27183FC2C300D41474 /* carrinho.png */; };
 		1B662F2A183FC32900D41474 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B662F29183FC32900D41474 /* home.png */; };
+		A8C31E37183FC6BC00B5FD54 /* market.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C31E36183FC6BC00B5FD54 /* market.png */; };
+		A8C31E3F183FCE7400B5FD54 /* dddd.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C31E3E183FCE7400B5FD54 /* dddd.png */; };
+		A8C31E41183FCF4B00B5FD54 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = A8C31E40183FCF4B00B5FD54 /* fundo.png */; };
 		A8CE4C9618355F4400C5E5D2 /* market33.png in Resources */ = {isa = PBXBuildFile; fileRef = A8CE4C9518355F4400C5E5D2 /* market33.png */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		1B662F1C183FBD3D00D41474 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1B662F27183FC2C300D41474 /* carrinho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrinho.png; sourceTree = "<group>"; };
 		1B662F29183FC32900D41474 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		A8C31E36183FC6BC00B5FD54 /* market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market.png; sourceTree = "<group>"; };
+		A8C31E3E183FCE7400B5FD54 /* dddd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dddd.png; sourceTree = "<group>"; };
+		A8C31E40183FCF4B00B5FD54 /* fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundo.png; sourceTree = "<group>"; };
 		A8CE4C9518355F4400C5E5D2 /* market33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = market33.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,9 @@
 				1B662F29183FC32900D41474 /* home.png */,
 				1B662F27183FC2C300D41474 /* carrinho.png */,
 				A8CE4C9518355F4400C5E5D2 /* market33.png */,
+				A8C31E36183FC6BC00B5FD54 /* market.png */,
+				A8C31E3E183FCE7400B5FD54 /* dddd.png */,
+				A8C31E40183FCF4B00B5FD54 /* fundo.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -281,11 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B662F28183FC2C300D41474 /* carrinho.png in Resources */,
+				A8C31E3F183FCE7400B5FD54 /* dddd.png in Resources */,
+				A8C31E37183FC6BC00B5FD54 /* market.png in Resources */,
 				1B4DE78B182D471800E7D3E6 /* InfoPlist.strings in Resources */,
 				1B662F2A183FC32900D41474 /* home.png in Resources */,
 				A8CE4C9618355F4400C5E5D2 /* market33.png in Resources */,
 				1B662F1E183FBD3D00D41474 /* HomeViewController.xib in Resources */,
 				1B4DE7B3182D473900E7D3E6 /* ViewController.xib in Resources */,
+				A8C31E41183FCF4B00B5FD54 /* fundo.png in Resources */,
 				1B4DE793182D471800E7D3E6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

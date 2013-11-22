@@ -30,6 +30,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+//    UIImage* foto = [UIImage imageNamed:@"market"];
+//    CGRect frame = [[self imgLogo] bounds];
+//    frame.size = foto.size;
+//    [[self imgLogo] setImage:foto];
 }
 
 - (void)didReceiveMemoryWarning

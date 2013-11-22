@@ -60,7 +60,7 @@
     
     [[self lblResposta] setText:resposta];
     
-    [[self scrvwResposta] setContentSize:CGSizeMake(400, 400)];
+    [[self scrvwResposta] setContentSize:CGSizeMake(300, 400)];
     
     NSLog(@"%@", resposta);
 }
@@ -78,6 +78,8 @@
 - (IBAction)btnAdd_OncClick:(id)sender {
     [[self lista]addObject:[[self txtProduto] text]];
     [[self pickerProdutos] reloadAllComponents];
+    [[self txtProduto] setText:@""];
+    [[self txtProduto] resignFirstResponder];
 }
 
 - (IBAction)btnremove_OnClick:(id)sender {
@@ -100,7 +102,7 @@
         return [[self lista]objectAtIndex:(row - 1)];
     }
     else{
-        return @"Selecione o produto para removê-lo";
+        return @"Select the product for deletion";
     }
 }
 
